@@ -1,20 +1,26 @@
-/* إصلاح مشكلة عدم تطبيق الخط */
+/* 1. تعريف الخط وربطه بالملف المرفوع */
 @font-face {
-    font-family: 'CustomFont';
-    /* تأكد أن المسار دقيق أو استخدم الرابط المباشر (Raw) إذا كان مرفوعاً على GitHub */
-    src: url('font.woff') format('woff');
+    font-family: 'MyCustomFont';
+    src: url('font.woff') format('woff'); /* ضع اسم ملف الخط الخاص بك هنا */
     font-weight: normal;
     font-style: normal;
-    font-display: swap; 
 }
 
+/* 2. تطبيق الخط على عناصر الصفحة */
 body {
-    /* فرض تطبيق الخط واستخدام خطوط احتياطية */
-    font-family: 'CustomFont', Arial, Tahoma, sans-serif !important;
-    background-color: #faf8f5;
-    color: #2c3e50;
-    direction: rtl;
-    text-align: right;
-    margin: 0;
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
     padding: 50px;
+    direction: rtl; /* اتجاه النص للغة العربية */
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
 }
