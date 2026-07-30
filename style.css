@@ -1,11 +1,10 @@
 /* 1. تعريف الخط وربطه بالملف المرفوع */
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('font.woff') format('woff'); /* ضع اسم ملف الخط الخاص بك هنا */
+    src: url('Daken-Black.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 /* 2. تطبيق الخط على عناصر الصفحة */
 body {
     font-family: 'MyCustomFont', Arial, sans-serif;
